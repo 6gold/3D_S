@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sphere Test</title>
+        <style>
+            #glFullscreen {
+                width: 100%;
+                height: 100vh;
+                min-width: 640px;
+                min-height: 360px;
+                position: relative;
+                overflow: hidden;
+                z-index: 0;
+            }
+            #canvas_3D_S {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: #eeeeee;
+            }
+        </style>
+
+
+    </head>
+    <body>
+
+        <!--容器-->
+        <div id="glFullscreen">
+            <!--canvas that hold all elements-->
+            <canvas id="canvas_3D_S"></canvas>
+        </div>
+
+        <!--顶点和片段着色器-->
+        <script id="shader-vs" type="x-shader/x-vertex">
+            attribute vec3 aVertexPosition;
+            attribute vec3 aVertexNormal;
+            attribute vec2 aTextureCoord;
+            uniform mat4 uMVMatrix;
+            uniform mat4 uPMatrix;
+            uniform mat3 uNMatrix;
+            uniform vec3 uAmbientColor;
+            uniform vec3 uLightingDirection;
+            uniform vec3 uDirectionalColor;
+            uniform bool uUseLighting;
+            varying vec2 vTextureCoord;
+            varying vec3 vLightWeighting;
+            void main(void) {
+                gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+                vTextureCoord = aTextureCoord;
+                if (!uUseLighting) {
+                    vLightWeighting = vec3(1.0, 1.0, 1.0);
+                } else {
+                    vec3 transformedNormal = uNMatrix * aVertexNormal;
+                    float directionalLightWeighting = max(dot(transformedNormal, uLightingDirection), 0.0);
+                    vLightWeighting = uAmbientColor + uDirectionalColor * directionalLightWeighting;
+                }
+            }
+        </script>
+        <script id="shader-fs" type="x-shader/x-fragment">
+            precision mediump float;
+            varying vec2 vTextureCoord;
+            varying vec3 vLightWeighting;
+            uniform sampler2D uSampler;
+            void main(void) {
+                vec4 textureColor = texture2D(uSampler, vec2(vTextureCoord.s, vTextureCoord.t));
+                gl_FragColor = vec4(textureColor.rgb * vLightWeighting, textureColor.a);
+            }
+        </script>
+
+
+        <!--引入必要的js文件-->
+        <script src="javascripts/Detector.js"></script>
+        <script src="javascripts/three.js"></script>
+        <script src="javascripts/controls/TrackballControls.js"></script>
+
+        <script>
+            // get canvas
+            var canvas_3D_S = document.getElementById('canvas_3D_S');
+            // set scene
+            var scene_3D_S = new THREE.Scene();
+            // set camera
+            var camera_3DS = new THREE.PerspectiveCamera(
+                45, window.innerWidth/window.innerHeight, 0.1, 10000
+            );
+            camera_3DS.position.x = 0;
+            camera_3DS.position.y = 175;
+            camera_3DS.position.z = 500;
+            camera_3DS.lookAt(new THREE.Vector3(0, 0, 0));
+            scene_3D_S.add(camera_3DS);
+            // set lights
+            var ambientLight_3D_S = new THREE.AmbientLight(0x404040);
+            var directionalLight1_3D_S = new THREE.DirectionalLight(0xc0c090);
+            var directionalLight2_3D_S = new THREE.DirectionalLight(0xc0c090);
+            directionalLight1_3D_S.position.set(-100,-50,100);
+            directionalLight2_3D_S.position.set(100,50,-100);
+            scene_3D_S.add(ambientLight_3D_S);
+            scene_3D_S.add(directionalLight1_3D_S);
+            scene_3D_S.add(directionalLight2_3D_S);
+
+            // set renderer
+            var renderer_3D_S = new THREE.WebGLRenderer({
+                canvas:canvas_3D_S,
+                antialias:true,
+            });
+            renderer_3D_S.setClearColor(0x222222);
+            renderer_3D_S.setSize( window.innerWidth, window.innerHeight );
+            renderer_3D_S.setPixelRatio( window.devicePixelRatio );
+
+            // set controller
+            var controller_3D_S = new THREE.TrackballControls(camera_3DS, renderer_3D_S.domElement);
+            controller_3D_S.rotateSpeed = 2.5;
+            controller_3D_S.zoomSpeed = 1.0;
+            controller_3D_S.panSpeed = 0.6;
+
+
+            // 变量定义
+            var gl_3D_S;
+            var shaderProgram;
+            var vertexPositionBuffer;
+            var vertexNormalBuffer;
+            var vertexIndexBuffer;
+            // 初始化WebGL
+            gl_3D_S = canvas_3D_S.getContext("experimental-webgl");
+            gl_3D_S.viewportWidth = canvas_3D_S.width;
+            gl_3D_S.viewportHeight = canvas_3D_S.height;
+
+
+
+            // call functions
+            initBuffers();// 生成并存储顶点数据
+            initShader();// 初始化着色器
+            render_3D_S();
+
+            // definition of functions
+            // 生成并存储顶点数据
+            function initBuffers() {
+                // 经纬带数目，控制画球的精细程度
+                var latitudeBands = 30;// 纬带数(纬线数+1)
+                var longitudeBands = 30;// 经带数
+                // 球的半径
+                var radius = 2;
+                var vertexPositionData = [];// 顶点位置数据
+                var normalData = [];// 法线数据
+                var textureCoordData = []; // 贴图坐标数据
+                // 【生成所有顶点位置】 latNumber:纬线计数器
+                for (var latNumber=0; latNumber<=latitudeBands; latNumber++) {
+                    var theta = latNumber * Math.PI / latitudeBands;
+                    var sinTheta = Math.sin(theta);
+                    var cosTheta = Math.cos(theta);
+                    for (var longNumber=0; longNumber<=longitudeBands; longNumber++) {
+                        var phi = longNumber * 2 * Math.PI / longitudeBands;
+                        var sinPhi = Math.sin(phi);
+                        var cosPhi = Math.cos(phi);
+                        // 左手坐标系下的坐标
+                        var x = sinTheta * cosPhi;
+                        var y = cosTheta;
+                        var z = sinTheta * sinPhi;
+                        normalData.push(x);
+                        normalData.push(y);
+                        normalData.push(z);
+                        vertexPositionData.push(radius * x);
+                        vertexPositionData.push(radius * y);
+                        vertexPositionData.push(radius * z);
+                    }
+                }
+                // 为了把这些顶点缝合到一起，需要建立一个索引列表，将一个矩形分成一对三角形
+                var indexData = [];
+                for (var latNumber = 0; latNumber < latitudeBands; latNumber++) {
+                    for (var longNumber = 0; longNumber < longitudeBands; longNumber++) {
+                        var first = (latNumber * (longitudeBands + 1)) + longNumber;
+                        var second = first + longitudeBands + 1;
+                        indexData.push(first);
+                        indexData.push(second);
+                        indexData.push(first + 1);
+                        indexData.push(second);
+                        indexData.push(second + 1);
+                        indexData.push(first + 1);
+                    }
+                }
+
+                vertexNormalBuffer = gl_3D_S.createBuffer();
+                gl_3D_S.bindBuffer(gl_3D_S.ARRAY_BUFFER, vertexNormalBuffer);
+                gl_3D_S.bufferData(gl_3D_S.ARRAY_BUFFER, new Float32Array(normalData),gl_3D_S.STATIC_DRAW);
+                vertexNormalBuffer.itemSize = 3;
+                vertexNormalBuffer.numItems = normalData.length / 3;
+
+                vertexPositionBuffer = gl_3D_S.createBuffer();
+                gl_3D_S.bindBuffer(gl_3D_S.ARRAY_BUFFER, vertexPositionBuffer);
+                gl_3D_S.bufferData(gl_3D_S.ARRAY_BUFFER, new Float32Array(vertexPositionData), gl_3D_S.STATIC_DRAW);
+                vertexPositionBuffer.itemSize = 3;
+                vertexPositionBuffer.numItems = vertexPositionData.length / 3;
+
+                vertexIndexBuffer = gl_3D_S.createBuffer();
+                gl_3D_S.bindBuffer(gl_3D_S.ELEMENT_ARRAY_BUFFER, vertexIndexBuffer);
+                gl_3D_S.bufferData(gl_3D_S.ELEMENT_ARRAY_BUFFER, new Uint16Array(indexData), gl_3D_S.STATIC_DRAW);
+                vertexIndexBuffer.itemSize = 1;
+                vertexIndexBuffer.numItems = indexData.length;
+            }
+            function getShader(gl, id) {
+                var shaderScript = document.getElementById(id);
+                if (!shaderScript) {
+                    return null;
+                }
+                var str = "";
+                var k = shaderScript.firstChild;
+                while (k) {
+                    if (k.nodeType == 3) {
+                        str += k.textContent;
+                    }
+                    k = k.nextSibling;
+                }
+                var shader;
+                if (shaderScript.type == "x-shader/x-fragment") {
+                    shader = gl_3D_S.createShader(gl_3D_S.FRAGMENT_SHADER);
+                } else if (shaderScript.type == "x-shader/x-vertex") {
+                    shader = gl_3D_S.createShader(gl_3D_S.VERTEX_SHADER);
+                } else {
+                    return null;
+                }
+                gl_3D_S.shaderSource(shader, str);
+                gl_3D_S.compileShader(shader);
+                if (!gl_3D_S.getShaderParameter(shader, gl_3D_S.COMPILE_STATUS)) {
+                    alert(gl_3D_S.getShaderInfoLog(shader));
+                    return null;
+                }
+                return shader;
+            }
+            function initShader() {
+                var fragmentShader = getShader(gl_3D_S, "shader-fs");
+                var vertexShader = getShader(gl_3D_S, "shader-vs");
+                shaderProgram = gl_3D_S.createProgram();
+                gl_3D_S.attachShader(shaderProgram,vertexShader);
+                gl_3D_S.attachShader(shaderProgram,fragmentShader);
+                gl_3D_S.linkProgram(shaderProgram);
+                if (!gl_3D_S.getProgramParameter(shaderProgram, gl_3D_S.LINK_STATUS)) {
+                    alert("Could not initialise shaders");
+                }
+                gl_3D_S.useProgram(shaderProgram);
+
+                shaderProgram.vertexPositionAttribute = gl_3D_S.getAttribLocation(shaderProgram, "aVertexPosition");
+                gl_3D_S.enableVertexAttribArray(shaderProgram.vertexPositionAttribute);
+
+                shaderProgram.vertexNormalAttribute = gl_3D_S.getAttribLocation(shaderProgram, "aVertexNormal");
+                gl_3D_S.enableVertexAttribArray(shaderProgram.vertexNormalAttribute);
+            }
+
+            function drawScene() {
+                gl_3D_S.viewport(0, 0, gl_3D_S.viewportWidth, gl_3D_S.viewportHeight);
+                gl_3D_S.clear(gl_3D_S.COLOR_BUFFER_BIT | gl_3D_S.DEPTH_BUFFER_BIT);
+
+                gl_3D_S.bindBuffer(gl_3D_S.ARRAY_BUFFER, vertexPositionBuffer);
+                gl_3D_S.vertexAttribPointer(shaderProgram.vertexPositionAttribute, vertexPositionBuffer.itemSize, gl_3D_S.FLOAT, false, 0, 0);
+
+                gl_3D_S.bindBuffer(gl_3D_S.ARRAY_BUFFER, vertexNormalBuffer);
+                gl_3D_S.vertexAttribPointer(shaderProgram.vertexNormalAttribute, vertexNormalBuffer.itemSize, gl_3D_S.FLOAT, false, 0, 0);
+
+                gl_3D_S.bindBuffer(gl_3D_S.ELEMENT_ARRAY_BUFFER, vertexIndexBuffer);
+
+                //setMatrixUniforms();
+
+                gl_3D_S.drawElements(gl_3D_S.TRIANGLES, vertexIndexBuffer.numItems, gl_3D_S.UNSIGNED_SHORT, 0);
+            }
+            function render_3D_S() {
+                requestAnimationFrame(render_3D_S);
+                if (!renderer_3D_S.autoClear) renderer_3D_S.clear();
+                // update values
+                // console.log(camera_3DS.rotation.x);
+                drawScene();
+                controller_3D_S.update();
+                renderer_3D_S.render(scene_3D_S,camera_3DS);
+            }
+
+
+        </script>
+    </body>
+</html>
