@@ -13,81 +13,79 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48243046">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Sphere_Test.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/Sphere_Test.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="118" column="24" lean-forward="true" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
-                  <folding>
-                    <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="e#3391#6725#0" />
-                    <element signature="e#3858#4836#0" />
-                    <element signature="e#5009#5587#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="3D_S.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/javascripts/3D_S.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1428">
-                  <caret line="51" column="31" lean-forward="true" selection-start-line="47" selection-end-line="51" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#1617#2276#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Sphere_Example.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/Sphere_Example.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="158" column="13" lean-forward="true" selection-start-line="151" selection-start-column="12" selection-end-line="158" selection-end-column="13" />
-                  <folding>
-                    <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
-                    <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
-                    <element signature="e#2019#2391#0" />
-                    <element signature="e#2431#3543#0" />
-                    <element signature="e#3610#5586#0" />
-                    <element signature="e#5637#6154#0" />
-                    <element signature="e#6219#6513#0" />
-                    <element signature="e#6669#6810#0" />
-                    <element signature="e#6846#7024#0" />
-                    <element signature="e#7533#7596#0" />
-                    <element signature="e#7845#7982#0" />
-                    <element signature="e#8025#8075#0" />
-                    <element signature="e#8120#8822#0" />
-                    <element signature="e#9025#12697#0" />
-                    <element signature="e#9344#10519#0" />
-                    <element signature="e#10634#11210#0" />
-                    <element signature="e#12731#15660#0" />
-                    <element signature="e#13151#14470#0" />
-                    <element signature="e#15808#16300#0" />
-                    <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#table#1;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="3D_S.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/3D_S.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-112">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <folding>
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sphere_Example.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/Sphere_Example.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1155">
+              <caret line="149" column="13" lean-forward="true" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
+              <folding>
+                <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#table#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sphere_Test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/Sphere_Test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1568">
+              <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="137" column="59" lean-forward="true" selection-start-line="137" selection-start-column="59" selection-end-line="137" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3D_S.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/3D_S.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="129" column="26" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
+              <folding>
+                <element signature="e#4133#4267#0" />
+                <element signature="e#2748#2991#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,6 +113,8 @@
       <find>gl</find>
       <find>getShader</find>
       <find>controll</find>
+      <find>okMat4Proj</find>
+      <find>Detector</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -123,14 +123,15 @@
         <option value="$PROJECT_DIR$/public/assets/models/obj/pika.obj" />
         <option value="$PROJECT_DIR$/public/controlTest.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/style_3D_S.css" />
-        <option value="$PROJECT_DIR$/public/3D_S.html" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/public/Triangle_Test.html" />
         <option value="$PROJECT_DIR$/public/glMatrix-0.9.5.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/3D_S.js" />
         <option value="$PROJECT_DIR$/public/webgl-utils.js" />
         <option value="$PROJECT_DIR$/public/Sphere_Example.html" />
         <option value="$PROJECT_DIR$/public/Sphere_Test.html" />
+        <option value="$PROJECT_DIR$/public/test.html" />
+        <option value="$PROJECT_DIR$/public/3D_S.html" />
+        <option value="$PROJECT_DIR$/public/javascripts/3D_S.js" />
       </list>
     </option>
   </component>
@@ -146,8 +147,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-26" />
-    <option name="y" value="7" />
+    <option name="x" value="184" />
     <option name="width" value="1012" />
     <option name="height" value="745" />
   </component>
@@ -156,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,24 +174,17 @@
               <item name="3D_S" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="3D_S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3D_S" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.5.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lesson02" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -202,12 +196,15 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lenovo\Desktop\3D_S\public" />
+      <recent name="C:\Users\lenovo\Desktop\3D_S\public\images" />
+      <recent name="C:\Users\lenovo\Desktop\3D_S\public\javascripts" />
       <recent name="C:\Users\lenovo\Desktop\3D_S" />
       <recent name="C:\Users\lenovo\Desktop\3D_S\public\assets\models\obj" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lenovo\Desktop\3D_S\public\assets\models\obj" />
+      <recent name="C:\Users\lenovo\Desktop\3D_S\public" />
       <recent name="C:\Users\lenovo\Desktop\3D_S\public\javascripts" />
+      <recent name="C:\Users\lenovo\Desktop\3D_S\public\assets\models\obj" />
       <recent name="C:\Users\lenovo\Desktop\3D_S\public\assets\models" />
       <recent name="C:\Users\lenovo\Desktop\3D_S\public\assets\rcs" />
     </key>
@@ -259,21 +256,23 @@
       <workItem from="1525244507228" duration="9168000" />
       <workItem from="1525330723364" duration="258000" />
       <workItem from="1525419804971" duration="14875000" />
+      <workItem from="1525592554316" duration="17211000" />
+      <workItem from="1525675589772" duration="8764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58698000" />
+    <option name="totallyTimeSpent" value="84673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4976852" weight="0.19033675" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976852" visible="true" weight="0.22547585" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32852563" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32919255" />
       <window_info id="npm" order="2" sideWeight="0.5023148" side_tool="true" weight="0.24963397" />
@@ -299,96 +298,81 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/public/javascripts/3D_S.js</url>
-          <line>98</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/public/javascripts/3D_S.js</url>
-          <line>3</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/public/javascripts/3D_S.js</url>
-          <line>57</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/public/javascripts/3D_S.js</url>
-          <line>48</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Example.html</url>
           <line>196</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Example.html</url>
           <line>244</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Example.html</url>
           <line>245</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Example.html</url>
           <line>246</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Example.html</url>
           <line>247</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Example.html</url>
           <line>248</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Example.html</url>
           <line>203</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Example.html</url>
           <line>227</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Test.html</url>
-          <line>118</line>
-          <properties lambdaOrdinal="-1" />
+          <line>115</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Test.html</url>
-          <line>126</line>
-          <properties lambdaOrdinal="-1" />
+          <line>123</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/Sphere_Example.html</url>
           <line>90</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/Sphere_Example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4424">
+          <caret line="158" column="13" lean-forward="true" selection-start-line="151" selection-start-column="12" selection-end-line="158" selection-end-column="13" />
+          <folding>
+            <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#table#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/Triangle_Test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2408">
@@ -410,23 +394,6 @@
           <folding>
             <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
-            <element signature="e#2019#2391#0" />
-            <element signature="e#2431#3543#0" />
-            <element signature="e#3610#5586#0" />
-            <element signature="e#5637#6154#0" />
-            <element signature="e#6219#6513#0" />
-            <element signature="e#6669#6810#0" />
-            <element signature="e#6846#7024#0" />
-            <element signature="e#7533#7596#0" />
-            <element signature="e#7845#7982#0" />
-            <element signature="e#8025#8075#0" />
-            <element signature="e#8120#8822#0" />
-            <element signature="e#9025#12697#0" />
-            <element signature="e#9344#10519#0" />
-            <element signature="e#10634#11210#0" />
-            <element signature="e#12731#15660#0" />
-            <element signature="e#13151#14470#0" />
-            <element signature="e#15808#16300#0" />
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
@@ -440,9 +407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2772">
           <caret line="99" column="11" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
-          <folding>
-            <element signature="e#1617#2276#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -460,23 +424,6 @@
           <folding>
             <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
-            <element signature="e#2019#2391#0" />
-            <element signature="e#2431#3543#0" />
-            <element signature="e#3610#5586#0" />
-            <element signature="e#5637#6154#0" />
-            <element signature="e#6219#6513#0" />
-            <element signature="e#6669#6810#0" />
-            <element signature="e#6846#7024#0" />
-            <element signature="e#7533#7596#0" />
-            <element signature="e#7845#7982#0" />
-            <element signature="e#8025#8075#0" />
-            <element signature="e#8120#8822#0" />
-            <element signature="e#9025#12697#0" />
-            <element signature="e#9344#10519#0" />
-            <element signature="e#10634#11210#0" />
-            <element signature="e#12731#15660#0" />
-            <element signature="e#13151#14470#0" />
-            <element signature="e#15808#16300#0" />
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
@@ -614,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -636,20 +576,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/glMatrix-0.9.5.min.js.html" />
-    <entry file="file://$PROJECT_DIR$/public/Triangle_Test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="86" column="68" selection-start-line="86" selection-start-column="68" selection-end-line="86" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style_3D_S.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" selection-start-line="9" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
@@ -657,17 +583,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/glMatrix-0.9.5.min.js">
+    <entry file="file://$PROJECT_DIR$/../WebGL绘制球体 - www.web-tinker.com.html" />
+    <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="273">
+          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/webgl-utils.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/webgl-utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+        <state relative-caret-position="109">
+          <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#2621#2951#0" />
@@ -678,47 +605,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/glMatrix-0.9.5.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="12615" column="4" selection-start-line="12615" selection-start-column="4" selection-end-line="12615" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lesson02/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="217" column="5" lean-forward="true" selection-start-line="207" selection-start-column="4" selection-end-line="217" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style_3D_S.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" selection-start-line="9" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/models/stl/test.stl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/个人文件/学习/大四/毕设/WebGL/three.js latest/three.js-dev/three.js-dev/examples/webgl_loader_stl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="114" column="88" selection-start-line="114" selection-start-column="80" selection-end-line="114" selection-end-column="88" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#3221#3501#0" />
+            <element signature="e#3606#4081#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/08-binary-operations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-728">
+          <caret line="250" column="58" lean-forward="true" selection-start-line="243" selection-start-column="12" selection-end-line="250" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/3D_S.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="129" column="26" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
+          <folding>
+            <element signature="e#4133#4267#0" />
+            <element signature="e#2748#2991#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/3D_S.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="29" column="69" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="29" selection-end-column="69" />
+        <state relative-caret-position="-112">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../WebGL绘制球体 - www.web-tinker.com.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/Sphere_Example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="158" column="13" lean-forward="true" selection-start-line="151" selection-start-column="12" selection-end-line="158" selection-end-column="13" />
+        <state relative-caret-position="-1155">
+          <caret line="149" column="13" lean-forward="true" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
           <folding>
             <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
-            <element signature="e#2019#2391#0" />
-            <element signature="e#2431#3543#0" />
-            <element signature="e#3610#5586#0" />
-            <element signature="e#5637#6154#0" />
-            <element signature="e#6219#6513#0" />
-            <element signature="e#6669#6810#0" />
-            <element signature="e#6846#7024#0" />
-            <element signature="e#7533#7596#0" />
-            <element signature="e#7845#7982#0" />
-            <element signature="e#8025#8075#0" />
-            <element signature="e#8120#8822#0" />
-            <element signature="e#9025#12697#0" />
-            <element signature="e#9344#10519#0" />
-            <element signature="e#10634#11210#0" />
-            <element signature="e#12731#15660#0" />
-            <element signature="e#13151#14470#0" />
-            <element signature="e#15808#16300#0" />
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
@@ -728,28 +696,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/3D_S.js">
+    <entry file="file://$PROJECT_DIR$/public/Triangle_Test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="51" column="31" lean-forward="true" selection-start-line="47" selection-end-line="51" selection-end-column="31" />
+        <state relative-caret-position="525">
+          <caret line="86" column="68" selection-start-line="86" selection-start-column="68" selection-end-line="86" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="137" column="59" lean-forward="true" selection-start-line="137" selection-start-column="59" selection-end-line="137" selection-end-column="59" />
           <folding>
-            <element signature="e#1617#2276#0" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/Sphere_Test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="118" column="24" lean-forward="true" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
+        <state relative-caret-position="-1568">
+          <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#3391#6725#0" />
-            <element signature="e#3858#4836#0" />
-            <element signature="e#5009#5587#0" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
