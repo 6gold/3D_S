@@ -144,7 +144,7 @@ var callbackOnLoadSTL_3D_S = function (modelgeom) {
     // add sphere to the scene
     scene_3D_S.add(sphere_3D_S);
 };
-stlloader_3D_S.load('assets/models/stl/test.stl',callbackOnLoadSTL_3D_S);
+stlloader_3D_S.load('./assets/models/stl/test.stl',callbackOnLoadSTL_3D_S);
 
 // -----------------------------call functions---------------------------------------
 render_3D_S();
